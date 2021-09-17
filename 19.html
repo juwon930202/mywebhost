@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            counter-increment: rint;
+        }
+        p::before{
+            content:counter(rint)".";
+        }
+        p::after{
+            content:" - " attr(data-page) " page ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Loran</h1>
+    <p data-page="52">loran's darkbeast</p>
+    <p data-page="273">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatibus nobis voluptate illum quam? Quidem, qui accusamus! Libero ratione blanditiis quasi id, obcaecati est recusandae neque doloremque saepe veniam commodi.</p>
+</body>
+</html>
